@@ -4,10 +4,10 @@ package printable
 import "strings"
 
 // All printable characters
-var AllPrintable string = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&\\'()*+,-./:;<=>?@[\\]^_`{|}~ \t\n\r\x0b\x0c"
+const AllPrintable string = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#$%&\\'()*+,-./:;<=>?@[\\]^_`{|}~ \t\n\r\x0b\x0c"
 
 // Layout changing characters
-var LayoutChanging string = "\t\n\r\x0b\x0c"
+const LayoutChanging string = "\t\n\r\x0b\x0c"
 
 // Check if a byte is a printable character.
 func IsPrintable(b byte) bool {
